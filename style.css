@@ -1,0 +1,86 @@
+body {
+  background-color: black;
+  font-family: 'Changa One', cursive;
+}
+
+.game-container {
+  position: relative;
+  display: inline-block;
+}
+
+#gameOver {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 72px;
+  color: white;
+  -webkit-text-stroke: 3px black;
+}
+
+.gradient-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 80px;
+  background: linear-gradient(to left bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+.status-bar {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  font-size: 36px;
+  color: white;
+  -webkit-text-stroke: 2px black;
+  display: flex;
+  align-items: center;
+}
+
+.coins{
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.coin-icon {
+  width: 25px;
+  color: gold;
+  margin-right: 5px;
+}
+
+
+
+/* Styling for Play and Pause buttons */
+#pauseButton,
+#playButton {
+  border-radius: 2rem;
+  position: absolute;
+  top: 20px; /* Adjust this value to position vertically */
+  right: 20px; /* Adjust this value to position horizontally */
+  font-size: 23px;
+  padding: 10px 20px;
+  background-color: #2e5adf;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 100; /* Ensure buttons are above other elements */
+}
+
+#pauseButton:hover,
+#playButton:hover {
+  background-color: #88ca31;
+}
+
+#pauseButton {
+  top: 70px; /* Adjust this value to position vertically */
+}
+
+#playButton {
+  top: 120px; /* Adjust this value to position vertically */
+}
